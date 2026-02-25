@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<section class="hero">
+    <h1>Revolutionizing Smart Agriculture</h1>
+    <p>AI-powered crop, fertilizer & disease intelligence for modern farmers.</p>
+    <a href="{{ url_for('crop_recommend') }}" class="cta-btn">Get Started</a>
+</section>
+
+<section class="services">
+
+    <a href="{{ url_for('crop_recommend') }}" class="glass-card">
+        <div class="icon">🌾</div>
+        <h2>Crop Intelligence</h2>
+        <p>Discover the most profitable crop for your soil & weather.</p>
+    </a>
+
+    <a href="{{ url_for('fertilizer_recommendation') }}" class="glass-card">
+        <div class="icon">🧪</div>
+        <h2>Smart Fertilizer</h2>
+        <p>AI optimized nutrient recommendations.</p>
+    </a>
+
+    <a href="{{ url_for('disease_prediction') }}" class="glass-card">
+        <div class="icon">🌿</div>
+        <h2>Disease Detection</h2>
+        <p>Upload plant images & detect diseases instantly.</p>
+    </a>
+
+</section>
+
+{% endblock %}

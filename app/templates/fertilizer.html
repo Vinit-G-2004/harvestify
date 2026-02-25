@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h1 class="page-title">Fertilizer Recommendation</h1>
+
+<form class="form-box" method="POST" action="{{ url_for('fert_recommend') }}">
+    <input type="number" name="nitrogen" placeholder="Nitrogen" required>
+    <input type="number" name="phosphorous" placeholder="Phosphorous" required>
+    <input type="number" name="pottasium" placeholder="Potassium" required>
+
+    <select name="cropname" required>
+        <option value="">Select Crop</option>
+        <option>rice</option>
+        <option>maize</option>
+        <option>banana</option>
+        <option>mango</option>
+        <option>cotton</option>
+    </select>
+
+    <button type="submit">Get Fertilizer</button>
+</form>
+
+{% endblock %}

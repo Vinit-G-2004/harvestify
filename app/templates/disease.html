@@ -1,0 +1,11 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<h1 class="page-title">Disease Detection</h1>
+
+<form class="form-box" method="POST" enctype="multipart/form-data">
+    <input type="file" name="file" required>
+    <button type="submit">Detect Disease</button>
+</form>
+
+{% endblock %}
